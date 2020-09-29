@@ -118,3 +118,5 @@ fi
 
 # dotfiles bare repository alias
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+source ~/.bash_completion/alacritty
+clear

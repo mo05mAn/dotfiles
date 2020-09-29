@@ -18,16 +18,16 @@ window:
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 100
+    columns: 80 
     lines: 25
 
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
-  position:
-    x: 400
-    y: 200
+  #position:
+  # x: 400
+  # y: 200
 
   # Window padding (changes require restart)
   #
@@ -409,7 +409,7 @@ cursor:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: Wsl
+  program: /bin/bash
 #  args:
 #    - --login
 
@@ -417,7 +417,7 @@ shell:
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
-working_directory: C:\Users\Xun Lu
+working_directory: None 
 
 # WinPTY backend (Windows only)
 #
@@ -457,7 +457,7 @@ mouse:
     #   - (Linux/BSD) xdg-open
     #   - (Windows) explorer
     launcher:
-      program: firefox.exe
+      program: firefox
       args: []
 
     # URL modifiers
