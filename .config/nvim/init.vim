@@ -1,14 +1,17 @@
-" Plugins
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'lervag/vimtex'
 " Themes
-Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', {'as':'dracula'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " Better syntax highlighting support
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
+" vim-airline
+source $XDG_CONFIG_HOME/nvim/vim-airline.vim
 
 " Settings
 set undofile
@@ -30,23 +33,12 @@ set number
 
 " colorscheme
 set termguicolors
-let g:gruvbox_italic = 1
-let g:gruvbox_bold = 1
-let g:gruvbox_underline = 1
-let g:gruvbox_undercurl = 1
 
-set bg=dark
-let g:gruvbox_contrast_dark = 'soft'
-
-autocmd vimenter * colorscheme gruvbox
+colorscheme dracula
 
 
 " latex
-autocmd Filetype tex setl updatetime=1
-
-let g:tex_flavor = 'latex'
-" autocmd BufWritePost *.tex silent! execute "!pdflatex % >/dev/null 2>&1" | redraw!
-
+source $XDG_CONFIG_HOME/nvim/vimtex.vim
 
 " Java styles
 set autoindent
