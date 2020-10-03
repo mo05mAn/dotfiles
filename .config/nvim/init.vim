@@ -16,6 +16,9 @@ Plug 'sheerun/vim-polyglot'
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" NerdTree
+Plug 'preservim/nerdtree'
+
 call plug#end()
 
 
@@ -31,4 +34,5 @@ source $XDG_CONFIG_HOME/nvim/vimtex.vim
 " vim-airline
 source $XDG_CONFIG_HOME/nvim/vim-airline.vim
 
-
+" nerdtree
+source $XDG_CONFIG_HOME/nvim/nerdtree.vim

@@ -27,3 +27,12 @@ set hlsearch
 set termguicolors
 colorscheme dracula
 
+" keybindings
+" Shortcuts for split nativgation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" toggle nerdtree
+map <C-n> :NERDTreeToggle<CR>
