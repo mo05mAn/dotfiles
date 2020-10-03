@@ -36,3 +36,7 @@ map <C-l> <C-w>l
 
 " toggle nerdtree
 map <C-n> :NERDTreeToggle<CR>
+
+" toggle Bracey live server
+map <F1> :Bracey<CR>
+map <F2> :BraceyStop<CR>

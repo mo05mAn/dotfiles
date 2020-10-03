@@ -10,6 +10,9 @@ Plug 'vim-airline/vim-airline-themes'
 " LaTeX support for vim
 Plug 'lervag/vimtex'
 
+" Live webserver
+Plug 'turbio/bracey.vim'
+
 " Better syntax highlighting support
 Plug 'sheerun/vim-polyglot'
 
