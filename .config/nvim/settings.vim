@@ -40,3 +40,6 @@ map <C-n> :NERDTreeToggle<CR>
 " toggle Bracey live server
 map <F1> :Bracey<CR>
 map <F2> :BraceyStop<CR>
+
+" toggle Hexokinase colors
+map <C-a> :HexokinaseToggle<CR>

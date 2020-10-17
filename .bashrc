@@ -121,5 +121,9 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 # dotfiles bare repository alias
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-source ~/.bash_completion/alacritty
-clear
+
+alias cds='cd /mnt/c/Users/Xun\ Lu/OneDrive\ -\ UW-Madison'
+
+# browser-sync config
+export SERVER_IP='hostname -I'
+alias serve='browser-sync start --server --files . --no-notify --host $SERVER_IP --port 9000'

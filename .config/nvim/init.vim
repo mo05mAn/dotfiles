@@ -10,11 +10,11 @@ Plug 'vim-airline/vim-airline-themes'
 " LaTeX support for vim
 Plug 'lervag/vimtex'
 
-" Live webserver
-Plug 'turbio/bracey.vim'
-
 " Better syntax highlighting support
 Plug 'sheerun/vim-polyglot'
+
+" asynchronous color highlighting
+Plug 'rrethy/vim-hexokinase', {'do': 'make hexokinase'}
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -39,3 +39,7 @@ source $XDG_CONFIG_HOME/nvim/vim-airline.vim
 
 " nerdtree
 source $XDG_CONFIG_HOME/nvim/nerdtree.vim
+
+" Hexokinase
+source $XDG_CONFIG_HOME/nvim/hexokinase.vim
+
